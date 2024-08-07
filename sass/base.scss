@@ -1,0 +1,58 @@
+//PRIMARY
+$font-family-barlow: 'Barlow', sans-serif;
+$font-family-fraunces: 'Fraunces', serif;
+$Soft-red: hsl(7, 99%, 70%);
+$Yellow: hsl(51, 100%, 49%);
+$Dark-desaturated-cyan: hsl(167, 40%, 24%);
+$Darkblue: hsl(198, 62%, 26%);
+$Darkmoderatecyan: hsl(168, 34%, 41%);
+$original-font: 1.8rem;
+//SECONDARY
+$VeryDarkdesaturatedblue: hsl(212, 27%, 19%);
+$Verydarkgrayishblue: hsl(213, 9%, 39%);
+$Darkgrayishblue: hsl(232, 10%, 55%);
+$Grayishblue: hsl(210, 4%, 67%);
+$White: hsl(0, 0%, 100%);
+
+$bp-largest: 75em;
+$bp-medium: 59.3em;
+html {
+  font-size: 62.5%;
+  @media screen and (max-width: $bp-largest) {
+    font-size: 50%;
+  }
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+img,
+picture,
+video,
+canvas,
+svg {
+  display: block;
+  max-width: 100%;
+}
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+body {
+  font-family: $font-family-barlow;
+  font-size: $original-font;
+  font-weight: 600;
+  font-size: 44rem;
+}
+.contact {
+  background-color: $White;
+  color: red;
+}

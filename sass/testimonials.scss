@@ -1,0 +1,65 @@
+.testimonials {
+  display: flex;
+  padding: 9.6rem;
+  gap: 4rem;
+  @media screen and (max-width: $bp-medium) {
+    display: flex;
+    flex-direction: column;
+  }
+
+  &__container {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+  }
+
+  &__img {
+    width: 8rem;
+    border-radius: 50%;
+    align-self: center;
+  }
+  &__paragraph {
+    text-align: center;
+    color: #19536b;
+    margin-bottom: 4rem;
+    line-height: 1.6;
+  }
+
+  &__info {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+  }
+  &__name {
+    font-weight: 900;
+    font-family: $font-family-fraunces;
+    font-size: 1.76rem;
+    margin-bottom: 0.8rem;
+  }
+  &__ocupation {
+    color: $Darkblue;
+    font-size: 1.2rem;
+    @media screen and (max-width: $bp-largest) {
+      font-size: 1.5rem;
+    }
+  }
+}
+.gallery {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+
+  &__img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  @media screen and (max-width: $bp-medium) {
+    grid-template-columns: repeat(2, 1fr);
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+}
