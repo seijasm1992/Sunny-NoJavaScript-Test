@@ -5,4 +5,7 @@
   font-weight: 900;
   font-family: $font-family-fraunces;
   line-height: 1;
+  @media screen and (max-width: $bp-iphone14) {
+    font-size: 4rem;
+  }
 }

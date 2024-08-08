@@ -68,6 +68,9 @@ body {
     @media screen and (max-width: 38.5em) {
       .features__text {
         padding: 5rem; } }
+    @media screen and (max-width: 30.62em) {
+      .features__text {
+        font-size: 1.7rem; } }
   .features__paragraph {
     font-family: "Barlow", sans-serif;
     margin-bottom: 3.2rem;
@@ -75,11 +78,12 @@ body {
     color: #23303e; }
     @media screen and (max-width: 59.3em) {
       .features__paragraph {
-        font-size: 2rem; } }
+        font-size: 2rem;
+        line-height: 1.4; } }
     @media screen and (max-width: 48.12em) {
       .features__paragraph {
         font-size: 2.4rem;
-        line-height: 1; } }
+        line-height: 1.4; } }
   .features__link {
     text-transform: uppercase;
     text-decoration: none;
@@ -351,6 +355,9 @@ span {
       .testimonials__paragraph {
         font-size: 2.4rem;
         line-height: 1.2; } }
+    @media screen and (max-width: 30.62em) {
+      .testimonials__paragraph {
+        font-size: 2rem; } }
   .testimonials__info {
     display: flex;
     flex-direction: column;
@@ -397,3 +404,6 @@ span {
   font-weight: 900;
   font-family: "Fraunces", serif;
   line-height: 1; }
+  @media screen and (max-width: 30.62em) {
+    .heading-2 {
+      font-size: 4rem; } }
