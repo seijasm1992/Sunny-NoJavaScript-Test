@@ -24,13 +24,23 @@
       justify-content: center;
       text-align: center;
     }
+    @media screen and (max-width: $bp-smallest) {
+      padding: 5rem;
+    }
   }
 
   &__paragraph {
     font-family: $font-family-barlow;
     margin-bottom: 3.2rem;
     line-height: 1.4;
+    @media screen and (max-width: $bp-medium) {
+      font-size: 2rem;
+    }
     color: $VeryDarkdesaturatedblue;
+    @media screen and (max-width: $bp-small) {
+      font-size: 2.4rem;
+      line-height: 1;
+    }
   }
 
   &__link {
@@ -40,7 +50,9 @@
     font-weight: 800;
     font-family: $font-family-fraunces;
     position: relative;
-
+    @media screen and (max-width: $bp-small) {
+      font-size: 2;
+    }
     &::before {
       content: '';
       position: absolute;
@@ -71,16 +83,16 @@
   grid-template-rows: minmax(65rem, 1fr);
   @media screen and (max-width: $bp-medium) {
     grid-template-columns: 1fr;
-    grid-template-rows: repeat(2, 100rem);
-    height: 100%;
+    grid-template-rows: 75rem 75rem;
   }
 }
 
 .features-leftt {
   background-image: url(/images/desktop/image-graphic-design.jpg);
   background-position: center;
-  background-size: cover;
   background-repeat: no-repeat;
+  height: 100%;
+  background-size: cover;
   display: flex;
   align-items: flex-end;
   justify-content: center;
@@ -90,18 +102,20 @@
     grid-column: 1/-1;
     grid-row: 1/2;
   }
-  @media screen and (max-width: $bp-medium) {
+  /*  @media screen and (max-width: $bp-medium) {
     background-image: url(/images/mobile/image-graphic-design.jpg);
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
-  }
+    object-fit: cover;
+  } */
 }
 .features-right {
   background-image: url(/images/desktop/image-photography.jpg);
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
+  height: 100%;
   align-items: flex-end;
   justify-content: center;
   text-align: center;
@@ -111,12 +125,13 @@
     grid-column: 1/-1;
     grid-row: 2/3;
   }
-  @media screen and (max-width: $bp-medium) {
+  /* @media screen and (max-width: $bp-medium) {
     background-image: url(/images/mobile/image-photography.jpg);
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
-  }
+    object-fit: cover;
+  } */
 }
 .features__txt {
   display: flex;
@@ -128,6 +143,13 @@
   color: $Dark-desaturated-cyan;
   word-spacing: 0.6rem;
   line-height: 1;
+  @media screen and (max-width: $bp-medium) {
+    font-size: 2rem;
+  }
+  @media screen and (max-width: $bp-small) {
+    font-size: 2rem;
+    line-height: 1;
+  }
 }
 .features__heading {
   font-size: 2.8rem;
@@ -143,6 +165,13 @@
   color: $Darkblue;
   word-spacing: 0.6rem;
   line-height: 1;
+  @media screen and (max-width: $bp-medium) {
+    font-size: 2rem;
+  }
+  @media screen and (max-width: $bp-small) {
+    font-size: 2rem;
+    line-height: 1;
+  }
 }
 
 @media screen and (max-width: $bp-medium) {

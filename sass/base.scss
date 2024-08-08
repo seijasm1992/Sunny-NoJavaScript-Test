@@ -16,10 +16,15 @@ $White: hsl(0, 0%, 100%);
 
 $bp-largest: 75em;
 $bp-medium: 59.3em;
+$bp-small: 48.12em;
+$bp-smallest: 38.5em;
 html {
   font-size: 62.5%;
   @media screen and (max-width: $bp-largest) {
     font-size: 50%;
+  }
+  @media screen and (max-width: $bp-small) {
+    font-size: 40%;
   }
 }
 

@@ -22,6 +22,9 @@
     font-size: 1.7rem;
     cursor: pointer;
     transition: 0.35s ease-in;
+    @media screen and (max-width: $bp-medium) {
+      font-size: 2rem;
+    }
     &:hover {
       color: #fff;
     }

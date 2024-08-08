@@ -23,6 +23,10 @@
     color: #19536b;
     margin-bottom: 4rem;
     line-height: 1.6;
+    @media screen and (max-width: $bp-small) {
+      font-size: 2.4rem;
+      line-height: 1.2;
+    }
   }
 
   &__info {
@@ -35,12 +39,18 @@
     font-family: $font-family-fraunces;
     font-size: 1.76rem;
     margin-bottom: 0.8rem;
+    @media screen and (max-width: $bp-small) {
+      font-size: 2rem;
+    }
   }
   &__ocupation {
     color: $Darkblue;
     font-size: 1.2rem;
     @media screen and (max-width: $bp-largest) {
       font-size: 1.5rem;
+    }
+    @media screen and (max-width: $bp-small) {
+      font-size: 2rem;
     }
   }
 }
